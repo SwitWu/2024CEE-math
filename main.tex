@@ -1,0 +1,66 @@
+\documentclass[noamssymb]{ctexbeamer}
+\usepackage{lete-sans-math}
+\usepackage{array}
+\newcolumntype{C}{>{$}c<{$}}
+\setcounter{MaxMatrixCols}{24}
+\newcommand{\red}{\color{red}}
+\newcommand{\blu}{\color{blue}}
+\begin{document}
+
+\begin{frame}{2024 年新课标 I 卷压轴题}
+  设 $m$ 为正整数，数列 $a_1$, $a_2$, $\ldots$, $a_{4m+2}$ 是公差不为 $0$ 的等差数列,
+  若从中删去两项 $a_i$ 和 $a_j$ $(i < j)$后，剩余的 $4m$ 项可被平均分为 $m$ 组，
+  且每组的 $4$ 个数都能构成等差数列，则称数列 $a_1$, $a_2$, $\ldots$, $a_{4m+2}$
+  是 $(i, j)$-可分数列.
+  \begin{enumerate}[(1)]
+  \item 写出所有的 $(i,j)$, $(1 \leq i < j \leq 6)$,
+    使数列 $a_1,a_2,\ldots,a_6$ 是 $(i, j)$-可分数列;
+  \item 当 $m \geq 3$ 时，证明数列 $a_1$, $a_2$, $\ldots$, $a_{4m+2}$ 是 $(2, 13)$-可分数列;
+  \item 从 $1,2,\ldots, 4m+2$中一次任取两个数 $i$ 和 $j$ $(i < j)$,
+    记数列 $a_1$, $a_2$, $\ldots$, $a_{4m+2}$ 是 $(i, j)$-可分数列的概率是 $P_{m}$,
+    证明：$P_{m} > \frac{1}{8}$
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}
+  \footnotesize
+  \setlength{\tabcolsep}{2pt}
+  \begin{tabular}{C<{\hspace{8pt}}CCCCCCCCCCCCCCCCCCCCCC}
+    m=1 & 1 & 2 & 3 & 4 & 5 & 6 \\
+    m=2 & \color<2->{red}1        & \color<2->{lightgray}2 
+        & \color<2->{red}3        & \color<2->{blue}4
+        & \color<2->{red}5        & \color<2->{blue}6 
+        & \color<2->{red}7        & \color<2->{blue}8
+        & \color<2->{lightgray}9  & \color<2->{blue}10 \\
+    m=3 & \color<3->{red}1        & \color<3->{lightgray}2 
+        & \color<3->{blue}3       & \color<3->{red}4 
+        & \color<3->{purple}5     & \color<3->{blue}6 
+        & \color<3->{red}7        & \color<3->{purple}8 
+        & \color<3->{blue}9       & \color<3->{red}10 
+        & \color<3->{purple}11    & \color<3->{blue}12 
+        & \color<2->{lightgray}13 & \color<3->{purple}14 \\
+    m=4 & \color<4->{red}1        & \color<4->{lightgray}2 
+        & \color<4->{blue}3       & \color<4->{purple}4 
+        & \color<4->{red}5        & \color<4->{cyan}6 
+        & \color<4->{blue}7       & \color<4->{purple}8 
+        & \color<4->{red}9        & \color<4->{cyan}10 
+        & \color<4->{blue}11      & \color<4->{purple}12 
+        & \color<4->{red}13       & \color<4->{cyan}14 
+        & \color<4->{blue}15      & \color<4->{purple}16 
+        & \color<2->{lightgray}17 & \color<4->{cyan}18 \\
+    m=5 & \color<5->{red}1        & \color<5->{lightgray}2 
+        & \color<5->{blue}3       & \color<5->{purple}4 
+        & \color<5->{cyan}5       & \color<5->{red}6 
+        & \color<5->{green}7      & \color<5->{blue}8 
+        & \color<5->{purple}9     & \color<5->{cyan}10 
+        & \color<5->{red}11       & \color<5->{green}12 
+        & \color<5->{blue}13      & \color<5->{purple}14 
+        & \color<5->{cyan}15      & \color<5->{red}16 
+        & \color<5->{green}17     & \color<5->{blue}18 
+        & \color<5->{purple}19    & \color<5->{cyan}20 
+        & \color<5->{lightgray}21 & \color<5->{green}22 \\
+  \end{tabular}
+\end{frame}
+
+
+\end{document}
